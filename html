@@ -1,0 +1,140 @@
+Trabajo 
+// Cliente
+class Cliente {
+    constructor(codigo , nombre) {
+
+        this.codigo=codigo;
+        this.nombre=nombre
+    }
+
+    mostrarNombre() {
+
+        console.log("Nombre:" + this.nombre);
+
+    }
+}
+class Cliente extends Privado {
+
+    constructor(cedula) {
+
+        super(cedula);
+        thiscedula= cedula
+    }
+
+    mostarCedula() {
+        console.log("el numero de cedula es:"+ thiscedula);
+    }
+}
+
+class  Empresarial {
+    constructor(nombredelaempresa) {
+        super(nombredelaempresa);
+        thisnombredelaempresa= nombredelaempresa
+    }
+    mostrarnombredelaempresa() {
+        console.log("el nombre de la empresa es"+ thisnombredelaempresa)
+    }
+}
+
+// Documento
+class  Document {
+    constructor(date , autor) {
+       this.date=date;
+       this.autor=autor
+    }
+    mostrarAutor() {
+        console.log ("autor" + this.autor);
+    }
+    
+}
+
+class Cliente extends Book {
+    constructor(Book) {
+        super(Book);
+        thisBook=Book
+    }
+    mostrarbook() {
+        console.log("book"+ this.Book);
+    }
+}
+ 
+class Cliente extends Email {
+    constructor(Subject,to) {
+        this.Subject=Subject;
+        this.to=to
+    }
+    mostrarSubject ()  {
+        console.log("Subject"+this.Subject);
+    }
+}
+ 
+//Persona
+class Cliente extends Persona {
+    constructor(Persona , direccion) {
+        this.Persona=Persona;
+        this.direccion=direccion
+    }
+    motrarPersona() {
+        console.log("el nombre de la persoan es:"+this.Persona);
+    }
+}
+
+class  direccion {
+    constructor(calle , ciudad) {
+        this.calle=calle;
+        this.ciudad=ciudad
+    }
+    mostrarciudad() {
+        console.log("el nombre de la ciudad es"+this.ciudad);
+    }
+}
+
+//Curso
+class Curso {
+    constructor(nombre,duracion,docente) {
+        this.nombre=nombre;
+        this.duracion=duracion;
+        this.docente=docente
+
+    }
+    mostrarNombre() {
+        console.log("el nombre del docente es:"+this.docente);
+    }
+}
+
+class  Docente {
+    constructor(nombre,profecion,edad) {
+        this.nombre=nombre;
+        this.profecion=profecion;
+        this.edad=edad
+    }
+    mostrarprofecion() {
+        console.log("la profecion del docente es:"+this.profecion);
+    }
+    
+}
+
+// Carrera
+class Carrera {
+    constructor(nombre,duracion,estudiante) {
+        this.nombre=nombre;
+        this.duracion=duracion;
+        this.estudiante=estudiante;
+    }
+    mostrarCarrera() {
+        console.log("el nombre de la carrera es:"+this.Carrera);
+    }
+}
+
+//Estudiante
+class Estudiante {
+    constructor(nombre,edad) {
+        this.nombre=nombre;
+        this.edad=edad
+
+    }
+    mostrarNombre() {
+        console.log("el nombre del estudiante es:"+this.Estudiante);
+    }
+    
+}
